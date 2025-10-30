@@ -10,26 +10,27 @@ body {
     align-items: center;
 }
 #cara{
-     background-color: yellow;
-    width: 60%;
-    height: 80%;
+     background-color: rgba(248, 189, 101, 0.301);
+    width: 20%;
+    height: 35%;
     /*border: 1px black solid;*/
     border-radius: 50%;
-   position: relative;
+   position: absolute;
+   top: 16%;
 }
 .ojo{
-    background-color:black;
+    background-color:#6e330bd5;
     width: 30%;
-    height: 35%;
+    height: 10%;
     border: 2px black solid;
     border-radius: 50%;
     position:absolute;
 }
 #ojo-izquierdo {
-    left:20%;
-    top: 10%;
+    left: 18%;
+    top: 18%;
 }
 #ojo-derecho{
-    right:20%;
-    top: 10%;    
+    right: 18%;
+    top: 18%;    
 }
