@@ -34,3 +34,56 @@ body {
     right: 18%;
     top: 18%;    
 }
+#boca {
+  width: 40%;
+  height: 5%;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+}
+#sombrero {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 180px solid purple;
+  position: absolute;
+  top: 1%;
+  left: 13%;
+}
+
+#barba {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid white;
+  position: absolute;
+  bottom: 35%;
+  left: 15%;
+}
+#varita {
+  width: 8px;
+  height: 150px;
+  background-color: brown;
+  position: absolute;
+  bottom: 30%;
+  left: 29%;
+  transform: rotate(25deg);
+  border-radius: 5px;
+ animation: flotar 2s ease-in-out infinite alternate;
+}
+
+#punta {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 15px gold, 0 0 25px yellow;
+}
+@keyframes flotar {
+  0% { transform: translateY(0) rotate(25deg); }
+  100% { transform: translateY(-20px) rotate(25deg); }
