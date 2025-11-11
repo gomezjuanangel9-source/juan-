@@ -73,20 +73,16 @@ h1 {
   border-radius: 50%;
   position: absolute;
   top: 60px;
+   animation: parpadeo 2s infinite alternate;
 }
 
 #ojo-izquierdo {
   left: 35px;
-animation-name: mover;  
-animation-duration: 5s; 
 }
 
 #ojo-derecho {
   right: 35px;
-animation-name: mover;  
-animation-duration: 5s; 
 }
-
 #boca {
   width: 60px;
   height: 12px;
@@ -154,7 +150,10 @@ animation-duration: 5s;
   left: -6px;
   box-shadow: 0 0 10px gold, 0 0 25px yellow, 0 0 40px white;
 }
-
+#titulo {
+  cursor: pointer;
+  transition: color 0.6s, transform 0.6s;
+}
 
 @keyframes flotar {
   0% {
@@ -164,7 +163,17 @@ animation-duration: 5s;
     transform: translateY(-15px) rotate(25deg);
   }
 }
-@keyframes mover {
-  0%   { left: 0px; }
-  100% { left: 200px; }
+@keyframes parpadeo {
+  0% {
+    transform: scale(1);
+    background-color: #3b1a73;
+  }
+  50% {
+    transform: scale(1.4);
+    background-color: #673ab7;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #311b92;
+  }
 }
