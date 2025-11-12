@@ -72,8 +72,4 @@ function generarPrediccion() {
   imagen.src = imagenes[indice];
   prediccion.innerText = comentarios[indice];
 }
-
 boton.addEventListener("click", generarPrediccion);
-boton.addEventListener("click", function() {
-    window.location.href = "mundialypredicciones.html";
-  });
